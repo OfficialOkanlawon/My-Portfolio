@@ -17,6 +17,15 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color:rgb(209, 169, 208) ;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+}
+
 section {
     margin-top: 100px;
     margin-bottom: 30px;
@@ -24,7 +33,6 @@ section {
 
 .hero {
     margin-top: 130px;
-    /* overflow-x: hidden; */
 }
 
 .hero .roww {
@@ -385,6 +393,17 @@ button {
     color: white;
 }
 
+.showw {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.showw.active {
+    transform: translateY(0);
+    opacity: 1;
+}
 
 /* "I never dreamed that I will become a Fullstack Developer but here I'm killing it !" */
 
