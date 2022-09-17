@@ -1,0 +1,562 @@
+:root {
+    --transition: all 300ms ease;
+    --color-primary: orchid;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.hero {
+    margin-top: 130px;
+    /* overflow-x: hidden; */
+}
+
+.hero .roww {
+    display: grid;
+    grid-template-columns:3rem auto 28rem;
+}
+
+.hero .roww .right-roww {
+    z-index: 11;
+}
+
+.hero .roww  .p {
+    width: 80%;
+}
+
+.hero .roww .side-icon a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.hero .roww .side-icon {
+    margin-top: 7rem;
+}
+
+.hero .description h1 {
+    font-size: 70px;
+}
+
+.hero .description .talk a {
+    text-decoration: none;
+    border: 1px solid var(--color-primary);
+    padding: 15px;
+    color: white;
+    background-color: var(--color-primary);
+    font-weight: 600;
+}
+
+.hero .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100; */
+}
+
+.profile .inner-circle img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.profile .inner-circle {
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.profile .outer-circle {
+    width: 22rem;
+    height: 22rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    position: relative;
+    animation: move 30s linear infinite;
+}
+
+.profile .outer-circle span {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem rgb(195, 143, 193);
+}
+
+.profile .outer-circle span:nth-child(1) {
+    left: calc(50% - 2rem);
+    top: -2rem;
+}
+
+.profile .outer-circle span:nth-child(2) {
+    right: -2rem;
+    top: calc(50% - 2rem);
+}
+
+.profile .outer-circle span:nth-child(3) {
+    left: -2rem;
+    top: calc(50% - 2rem);
+}
+
+.profile .outer-circle span:nth-child(4) {
+    bottom: -2rem;
+    left: calc(50% - 2rem);
+}
+
+@keyframes move {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.about .about-text {
+    padding-top: 40px;
+}
+
+.about-text img {
+    width: 100%;
+}
+
+/* .about .more {
+    display: none;
+} */
+
+/* .show-content .more p {
+    display: block;
+    color: black;
+} */
+
+.about-text .abt a {
+    /* text-decoration: none; */
+    color: var(--color-primary);
+}
+
+.about-text .abt .download a {
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    padding: 15px;
+    color: white;
+    background-color: var(--color-primary);
+    font-weight: 600;
+}
+
+.question-answer {
+    width: 50%;
+    margin: 0 auto;
+    /* padding-bottom: 20px; */
+    padding-top: 20px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.answer {
+    display: none;
+}
+
+.up-arrow {
+    display: none;
+}
+
+.show-text .answer {
+    display: block;
+}
+
+.show-text .up-arrow {
+    display: inline;
+}
+
+.show-text .down-arrow {
+    display: none;
+}
+
+.question-answer .question {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 5px;
+}
+
+.skills .item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f4f4f4;
+    margin-bottom: 0.3rem;
+    transition: var(--transition);
+}
+
+.skills .item:hover {
+    background: white;
+}
+
+.skills .progress-area {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.skills .item .progress-area .progress-barr {
+    width: 100%;
+    height: 1rem;
+    background:rgb(215, 184, 214) ;
+}
+
+.skills .item .progress-area .progress-barr .progres {
+    height: 100%;
+    width: 92%;
+    background: var(--color-primary);
+}
+
+.skills .item:nth-child(2) .progress-area .progress-barr .progres {
+    width: 88%;
+}
+
+.skills .item:nth-child(3) .progress-area .progress-barr .progres {
+    width: 90%;
+}
+
+.skills .item:nth-child(4) .progress-area .progress-barr .progres {
+    width: 85%;
+}
+
+.skills .itm2 .item .progress-area .progress-barr .progres {
+    width: 85%;
+}
+
+.skills .itm2 .item:nth-child(2) .progress-area .progress-barr .progres {
+    width: 80%;
+}
+
+.skills .itm3 .item .progress-area .progress-barr .progres {
+    width: 95%;
+}
+
+.projects .thumbnail img {
+    width: 100%;
+}
+
+.projects .actions a {
+    text-decoration: none;
+    padding: 7px;
+    color: white;
+    background:var(--color-primary);
+}
+
+.contact {
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    max-width: 100vw;
+    padding: 0;
+    height: 100vh;
+}
+
+.contact .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+.contact .form {
+    width: 50%;
+    margin: auto;
+    padding-top: 5rem;
+
+}
+
+.contact .form h1 {
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.contact .form input, .contact .form textarea {
+    display: block;
+    padding: 1.4rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    transition: var(--transition);
+
+}
+
+.contact .form input:focus, .contact .form textarea:focus {
+    background: white;
+    color: black;
+}
+
+.contact .form input::placeholder, .contact .form textarea::placeholder {
+    color: white;
+}
+
+.contact .form .btn {
+    width: 14rem;
+    margin: 0 auto;
+    background: white;
+    color: black;
+    border: none;
+}
+
+.contact .form .btn:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navs ul {
+    display: flex;
+}
+
+.navs ul li {
+    padding: 0 0.5rem;
+}
+
+.navs ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    background: var(--color-primary);
+    color: white;
+    height: 3rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.copy {
+    background: black;
+    height: 2rem;
+    color: white;
+}
+
+
+/* "I never dreamed that I will become a Fullstack Developer but here I'm killing it !" */
+
+@media (max-width: 769px) {
+    .hero .roww {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 50%;
+        text-align: center;
+        row-gap: 6rem;
+    }
+
+    .hero {
+        /* margin: 0 auto;
+        padding-top: 5rem; */
+        height: 100vh;
+    }
+
+    .hero .roww .side-icon {
+        display: none;
+    }
+
+    .hero .roww h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero .roww .left-roww .p {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .roww .description {
+        /* width: 90%; */
+        margin: 0 auto;
+    }
+
+
+    .hero .right-roww {
+        margin: 0 auto;
+        grid-row: 1;
+        padding: 10rem 0 0 0;
+    }
+
+    .hero .left-roww {
+        margin-top: 5rem;
+    }
+
+    .about {
+        margin-top: 15rem;
+    }
+
+    .about .about-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about .about-text .abt {
+        text-align: center;
+        width: 100%;
+    }
+
+    .skills .question-answer {
+        width: 100%;
+    }
+
+    .skills, .projects {
+        margin-top: 5rem;
+    }
+
+    .projects {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact .form input, .contact .form textarea {
+        padding: 1.2rem;
+        width: 100%;
+    }
+
+    .contact .form {
+        width: 90%;
+    }
+
+    .profile .inner-circle {
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .profile .outer-circle {
+        width: 18rem;
+        height: 18rem;
+        border: 1px solid var(--color-primary);
+        border-radius: 50%;
+        position: relative;
+        animation: move 30s linear infinite;
+    }
+
+    .profile .outer-circle span {
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        border-radius: 50%;
+        background-color: white;
+        color: var(--color-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 1rem rgb(195, 143, 193);
+    }
+
+    .profile .outer-circle span:nth-child(1) {
+        left: calc(50% - 2rem);
+        top: -2rem;
+    }
+
+    .profile .outer-circle span:nth-child(2) {
+        right: -2rem;
+        top: calc(50% - 2rem);
+    }
+
+    .profile .outer-circle span:nth-child(3) {
+        left: -2rem;
+        top: calc(50% - 2rem);
+    }
+
+    .profile .outer-circle span:nth-child(4) {
+        bottom: -2rem;
+        left: calc(50% - 2rem);
+    }
+
+    section {
+        margin-top: 20px;
+    }
+
+    .pro {
+        margin-top: 3rem;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+
+    .footer {
+        padding: 1.6rem;
+        height: auto;
+    }
+
+    .footer .navs {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .navs ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+   .navs ul li {
+    padding: 0.3rem 0;
+   }
+
+   .navs .linkk {
+    margin: 0 !important;
+    padding-left: 0.3rem;
+}
+
+    .navs .linkk .lin{
+    padding-left: 0.6rem;
+}
+
+
+}
