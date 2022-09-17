@@ -19,3 +19,22 @@ questions.forEach(function(question){
     })
 
 })
+
+const navitems = document.querySelectorAll('.nav-item')
+
+const unActive = () => {
+    navitems.forEach(item => {
+        const link = item.querySelector('a')
+        link.classList.remove('activee')
+    })
+}
+
+
+navitems.forEach(item => {
+    const link = item.querySelector('a')
+    link.addEventListener('click', () => {
+        unActive()
+        link.classList.add('activee')
+    })
+
+})

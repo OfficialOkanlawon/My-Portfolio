@@ -72,6 +72,12 @@ section {
     /* width: 100; */
 }
 
+.activee {
+    background-color: var(--color-primary);
+    padding: 0.3rem;
+    color: white !important;
+}
+
 .profile .inner-circle img {
     align-items: center;
     display: flex;
