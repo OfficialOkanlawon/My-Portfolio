@@ -323,12 +323,11 @@
             <div class="overlay">
                 <div class="form text-center">
                     <h1>Let's Talk</h1>
-                    <form name="contact-form" method="post" data-netlify="true" data-netlify-recaptcha="true">
+                    <form name="contact-form" method="post" data-netlify="true" action="https://formspree.io/f/xzbweaqw">
                         <input type="text" name="Name" id="Name" placeholder="Name" required>
                         <input type="email" name="Email" id="Email" placeholder="Email" required>
                         <input type="text" name="Subject" id="Subject" placeholder="Subject" required>
                         <textarea name="Message" id="Message" placeholder="Message" required></textarea>
-                        <div data-netlify-recaptcha="true"></div>
                         <input type="submit" value="Submit" class="btn">
                     </form>
                 </div>
@@ -364,5 +363,3 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-
-<!-- action="https://formspree.io/f/xzbweaqw" -->
