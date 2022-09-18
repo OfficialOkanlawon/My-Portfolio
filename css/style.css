@@ -467,7 +467,12 @@ button {
     }
 
     .skills .question-answer {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .skills .question h4 {
+        font-size: 15px;
     }
 
     .skills, .projects {
@@ -487,6 +492,11 @@ button {
     .contact .form {
         width: 90%;
     }
+
+    /* .profile {
+        width: 80%;
+        margin: 0 auto;
+    } */
 
     .profile .inner-circle {
         position: absolute;
