@@ -57,3 +57,12 @@ function show(){
         }
     }
 }
+
+// Typing animation 
+
+var typed = new Typed(".typing", {
+    strings: ["FullStack", "FrontEnd", "BackEnd"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+})

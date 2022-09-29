@@ -278,6 +278,10 @@ button {
     width: 85%;
 }
 
+.skills .item:nth-child(5) .progress-area .progress-barr .progres {
+    width: 70%;
+}
+
 .skills .itm2 .item .progress-area .progress-barr .progres {
     width: 85%;
 }
